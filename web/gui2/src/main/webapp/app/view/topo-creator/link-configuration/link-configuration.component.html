@@ -1,0 +1,54 @@
+<div id="link-configuration" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header my-blue-bg">
+        <h4 class="modal-title my-white-font" id="operation">Link Configuration</h4>
+        <button type="button" id="close-btn-top" class="close my-white-font" data-dismiss="modal"
+          aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="rate">Rate (Mbit):</label>
+          <input type="number" class="form-control" id="rate" name="Rate" size="5"> 
+        </div>
+        <div class="form-group">
+          <label for="delayTime">Delay time (ms):</label>
+          <input type="number" class="form-control" id="delayTime" name="Delay" size="5"> 
+          <label for="delayVariance">Delay variance (ms):</label>
+          <input type="number" class="form-control" id="delayVariance" name="DelayVariance" size="5">
+        </div>
+        <div class="form-group">
+          <label for="lossRate">Loss rate (%):</label>
+          <input type="number" class="form-control" id="lossRate" name="Loss" size="5">
+          <label for="lossCorrelation">Loss correlation (%):</label>
+          <input type="number" class="form-control" id="lossCorrelation" name="LossCorrelation" size="5">
+        </div>
+        <div class="form-group">
+          <label for="duplicate">Duplicate (%):</label>
+          <input type="number" class="form-control" id="duplicate" name="Duplicate" size="5">
+        </div>
+        <div class="form-group">
+          <label for="reorderRate">Reorder rate (%):</label>
+          <input type="number" class="form-control" id="reorderRate" name="Reorder" size="5">
+          <label for="reorderRate">Reorder correlation (%):</label>
+          <input type="number" class="form-control" id="reorderCorrelation" name="ReorderCorrelation" size="5">
+        </div>
+        <div class="form-group">
+          <label for="corrupt">Corrupt (%):</label>
+          <input type="number" class="form-control" id="corrupt" name="Corrupt" size="5"> 
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="cancel-button" type="button" data-dismiss="modal" class="btn btn-default"
+          style="border-color: #ccc">
+          Cancel
+        </button>
+
+        <button type="button" id="saveLinkButton" class="btn btn-primary my-blue-button">
+          <i class="fa fa-fw fa-check"></i>
+          <span id="saveLinkButton-text"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
